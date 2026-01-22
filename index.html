@@ -659,7 +659,7 @@
     <script>
         const allQuestions = [
             {
-                "q": "Int he coinbucketmechanism you can control:",
+                "q": "In the coin bucket mechanism you can control:",
                 "o": [
                     "The maximum traversal time of a router.",
                     "Internal queue management with WFQ.",
@@ -4741,11 +4741,11 @@
 
             const availableCount = Math.min(count, filtered.length);
 
-            const shuffled = [...filtered].sort(() => Math.random() - 0.5);
-            quizQuestions = shuffled.slice(0, availableCount);
-
-            if (order === 'random') {
-                quizQuestions = quizQuestions.sort(() => Math.random() - 0.5);
+            if (order === 'sequential') {
+                quizQuestions = [...filtered].slice(0, availableCount);
+            } else if (order === 'random') {
+                const shuffled = [...filtered].sort(() => Math.random() - 0.5);
+                quizQuestions = shuffled.slice(0, availableCount);
             }
 
             userAnswers = new Array(quizQuestions.length).fill(null);
