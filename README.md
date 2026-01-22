@@ -16,3 +16,5 @@ Single-file **Computer Network Technologies and Services quiz app** for PoliTO e
 Built for **Politecnico di Torino students** and peers.
 
 ## Feel free to fix any problems you see and send a PR
+
+inspired by: https://kurtoglusefa.github.io/vuequizzer/#/
