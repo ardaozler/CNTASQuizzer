@@ -1,6 +1,7 @@
 # CNTAS Quizzer
 
 Single-file **Computer Network Technologies and Services quiz app** for PoliTO exam practice.
+Live on: https://ardaozler.github.io/CNTASQuizzer/
 
 ## Usage
 - Download the `.html` file  
